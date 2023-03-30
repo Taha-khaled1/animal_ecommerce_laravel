@@ -6,7 +6,7 @@
                 style="background-image: url('{{ asset(SliderImage() . $slider->Background_Image) }}');">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-6">
+                        {{-- <div class="col-lg-6 col-6">
                             <div class="hero-slider-content text-center">
                                 <h2 class="slider-sub-title">
                                     {{ langConverter($slider->en_Sub_Title, $slider->fr_Sub_Title) }}</h2>
@@ -21,23 +21,23 @@
                                         <i class="iocn flaticon-right-arrow"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-5 offset-lg-1 col-6">
+                        </div> --}}
+                        {{-- <div class="col-lg-5 offset-lg-1 col-6">
                             <div class="hero-slider-image text-center">
                                 <img class="hero-image img-fluid" src="{{ asset(SliderImage() . $slider->Thumbnail) }}"
                                     alt="hero-banner-image" />
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
-        @endforeach
+        @endforeach  
     </div>
 </div>
 <!-- hero-section area end here  -->
 
 <!-- brads area start here  -->
-<div class="brads-area">
+{{-- <div class="brads-area">
     <div class="container">
         <div class="brads-slide">
             @foreach ($brands as $brand)
@@ -47,7 +47,7 @@
             @endforeach
         </div>
     </div>
-</div>
+</div> --}}
 <!-- brads area start here  -->
 
 <!-- Popular Categories area start here  -->
@@ -70,22 +70,22 @@
         </div>
         <div class="row">
             @foreach (Category_Des_Icon() as $item)
-                <div class="col-lg-4 col-md-6">
-                    <a class="single-categorie" href="{{ route('category.product', $item->id) }}">
-                        <div class="categorie-wrap">
-                            <div class="categorie-icon">
-                                <i class="{{ $item->Category_Icon }}"></i>
-                            </div>
-                            <div class="categorie-info">
-                                <h3 class="categorie-name">
-                                    {{ langConverter($item->en_Category_Name, $item->fr_Category_Name) }}</h3>
-                                <h4 class="categorie-subtitle">
-                                    {{ langConverter($item->en_Description, $item->fr_Description) }}</h4>
-                            </div>
+            <div class="col-lg-4 col-md-6">
+                <a class="single-categorie" href="{{ route('category.product', $item->id) }}">
+                    <div class="categorie-wrap">
+                        <div class="categorie-icon">
+                            <div class="circle-image" style="background-image: url('im.png')"></div>
                         </div>
-                        <i class="arrow flaticon-right-arrow"></i>
-                    </a>
-                </div>
+                        <div class="categorie-info">
+                            <h3 class="categorie-name">
+                                {{ langConverter($item->en_Category_Name, $item->fr_Category_Name) }}</h3>
+                            <h4 class="categorie-subtitle">
+                                {{ langConverter($item->en_Description, $item->fr_Description) }}</h4>
+                        </div>
+                    </div>
+                    <i class="arrow flaticon-right-arrow"></i>
+                </a>
+            </div>
             @endforeach
         </div>
     </div>
@@ -168,7 +168,7 @@
 
 <!-- About Area start here  -->
 <div class="about-area section"
-    style="background-image: url({{ asset(aboutUsPage() . siteContentHomePage('about_us')->image) }})">
+    style="background-image: url('b.jpg')">
     <div class="container">
         <div class="section-header-area">
             <div class="row">
@@ -186,7 +186,9 @@
                 </div>
             </div>
         </div>
+        
         <div class="story-box-slide">
+
             @foreach ($story as $item)
                 <div class="single-story-box">
                     <h3 class="story-title">{{ __('Story Of') }} <span class="story-year">{{ $item->Year }}</span>
@@ -194,7 +196,9 @@
                     <p class="story-content">{!! langConverter($item->en_Description, $item->fr_Description) !!}</p>
                 </div>
             @endforeach
+
         </div>
+
     </div>
 </div>
 <!-- About Area  end here  -->
@@ -572,7 +576,9 @@
 <!-- Blog area end here  -->
 
 <!-- Image Gallery area start here  -->
-<x-frontend.image-gallery></x-frontend.image-gallery>
+<x-frontend.image-gallery>
+  
+</x-frontend.image-gallery>
 <!-- Image Gallery area end here  -->
 
 <!-- Testimonial ara start here  -->

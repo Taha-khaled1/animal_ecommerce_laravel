@@ -4255,6 +4255,7 @@ ul {
 
 .single-grid-product .product-top .product-thumbnal {
     width: 100%;
+    height: 280px;
     -o-object-fit: cover;
     object-fit: cover;
     -webkit-transition: 1s ease all;
@@ -12349,7 +12350,7 @@ ul {
 
 .cart-product-item .single-grid-product .product-top .product-thumbnal {
     width: 130px;
-    height: auto;
+    height: 280px;
     -o-object-fit: cover;
     object-fit: cover;
     -webkit-transition: 1s ease all;
@@ -12570,6 +12571,7 @@ ul {
 
 .cart-page-area .cart-page-item .single-grid-product .product-top .product-thumbnal {
     width: 190px;
+    height: 280px;
     height: auto;
     -o-object-fit: cover;
     object-fit: cover;

@@ -4404,6 +4404,7 @@ scrollUp
      object-fit: cover;
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
+  height: 280px;
 }
 
 .single-grid-product .product-top .product-flags {
@@ -12612,6 +12613,7 @@ secendary-tabs
   object-fit: cover;
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
+  height: 280px;
 }
 
 .cart-product-item .single-grid-product .product-info {
@@ -12841,6 +12843,7 @@ secendary-tabs
   object-fit: cover;
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
+  height: 280px;
 }
 
 .cart-page-area .cart-page-item .product-info {
