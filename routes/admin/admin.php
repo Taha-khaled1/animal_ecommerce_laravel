@@ -107,6 +107,22 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/inactive/{d}', [CategoryController::class, 'categoryInactive'])->name('category.inactive')->middleware(['permission:category-edit', 'isDemo']);
         Route::get('/delete/{id}', [CategoryController::class, 'categoryDelete'])->name('category.delete')->middleware(['permission:category-delete', 'isDemo']);
     });
+
+
+    Route::group(['prefix' => 'Service'], function () {
+        Route::get('', [CategoryController::class, 'Service'])->name('Service');
+        Route::get('/create', [CategoryController::class, 'ServiceCreate'])->name('Service.create');
+        Route::post('/create', [CategoryController::class, 'ServiceStore'])->name('Service.store');
+        Route::get('/edit/{id}', [CategoryController::class, 'ServiceEdit'])->name('Service.edit');
+        Route::post('/update', [CategoryController::class, 'ServiceUpdate'])->name('Service.update');
+        // Route::get('/active/{id}', [CategoryController::class, 'categoryActive'])->name('category.active')->middleware(['permission:category-edit', 'isDemo']);
+        // Route::get('/inactive/{d}', [CategoryController::class, 'categoryInactive'])->name('category.inactive')->middleware(['permission:category-edit', 'isDemo']);
+        Route::get('/delete/{id}', [CategoryController::class, 'ServiceDelete'])->name('Service.delete');
+    });
+
+
+
+
     Route::group(['prefix' => 'brand'], function () {
         Route::get('', [BrandController::class, 'brand'])->name('brand')->middleware(['permission:brand-list|brand-create|brand-edit|brand-delete']);
         Route::get('/create', [BrandController::class, 'brandCreate'])->name('brand.create')->middleware(['permission:brand-create']);
