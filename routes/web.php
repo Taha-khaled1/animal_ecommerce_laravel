@@ -101,7 +101,7 @@ Route::group(['middleware' => ['is_user']], function () {
 
     Route::group(['prefix' => 'cart'], function () {
         Route::post('add', [CartController::class, 'addToCart'])->name('add.to.cart');
-        Route::get('/content', [CartController::class, 'cartContent'])->name('cart.content');
+        Route::get('/content', [CartController::class, 'cartContent'])->name('cart.content'); 
         Route::get('/delete', [CartController::class, 'cartDelete'])->name('cart.delete');
         Route::get('/decrease', [CartController::class, 'cartDecrease'])->name('cart.decrease');
         Route::get('/increase', [CartController::class, 'cartIncrease'])->name('cart.increase');
