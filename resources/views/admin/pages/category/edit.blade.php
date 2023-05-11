@@ -40,9 +40,14 @@
                                                 <label>{{ __('Category Name '.langString('fr'))}}</label>
                                                 <input type="text" id="fr_category_name" name="fr_category_name" value="{{$edit->fr_Category_Name}}" placeholder="Name (Arabic)">
                                             </div>
-                                            <div class="input__group mb-25">
-                                                <label>{{ __('Icon Class')}}</label>
-                                                <input type="text" id="icon_class" name="icon_class" value="{{$edit->Category_Icon}}" placeholder="Icon">
+{{--                                            <div class="input__group mb-25">--}}
+{{--                                                <label>{{ __('Icon Class')}}</label>--}}
+{{--                                                <input type="text" id="icon_class" name="icon_class" value="{{$edit->Category_Icon}}" placeholder="Icon">--}}
+{{--                                            </div>--}}
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">{{ __('Image')}}</label>
+                                                <input type="file" class="form-control putImage1"  name="image" id="image" accept="image/*">
+                                                <img class="admin_image"  src="{{asset(CategoryImage().$edit->image)}}" id="target1"/>
                                             </div>
                                             <div class="input__group mb-25">
                                                 <label>{{__('Description '.langString('en'))}}</label>

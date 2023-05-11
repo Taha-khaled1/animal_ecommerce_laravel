@@ -10,7 +10,10 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory, Sluggable;
-    protected $fillable=[
+
+    protected $appends = ['primaryImageUrl', 'secondImageUrl', 'thirdImageUrl', 'forthImageUrl', 'fifthImageUrl'];
+
+    protected $fillable = [
         'Category_Id',
         'Brand_Id',
         'en_Product_Name',
@@ -50,11 +53,47 @@ class Product extends Model
         'affiliate_link',
         'type',
     ];
+
     /**
      * Return the sluggable configuration array for this model.
      *
      * @return array
      */
+    public function getPrimaryImageUrlAttribute()
+    {
+        if ($this->Primary_Image)
+            return asset(ProductImage() . $this->Primary_Image);
+        return null;
+    }
+
+    public function getSecondImageUrlAttribute()
+    {
+        if ($this->Image2)
+            return asset(ProductImage() . $this->Image2);
+        return null;
+    }
+
+    public function getThirdImageUrlAttribute()
+    {
+        if ($this->Image3)
+            return asset(ProductImage() . $this->Image3);
+        return null;
+    }
+
+    public function getForthImageUrlAttribute()
+    {
+        if ($this->Image4)
+            return asset(ProductImage() . $this->Image4);
+        return null;
+    }
+
+    public function getFifthImageUrlAttribute()
+    {
+        if ($this->Image5)
+            return asset(ProductImage() . $this->Image5);
+        return null;
+    }
+
     public function sluggable(): array
     {
         return [
@@ -66,11 +105,15 @@ class Product extends Model
             ],
         ];
     }
-    public function category(){
-        return $this->belongsTo(Category::class,'Category_Id');
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'Category_Id');
     }
-    public function brand(){
-        return $this->belongsTo(Brand::class,'Brand_Id');
+
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class, 'Brand_Id');
     }
 
 
@@ -78,6 +121,7 @@ class Product extends Model
     {
         return $this->belongsToMany(Color::class, 'color_product');
     }
+
     public function sizes()
     {
         return $this->belongsToMany(Size::class, 'size_product');
