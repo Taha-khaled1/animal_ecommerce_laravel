@@ -19,9 +19,10 @@ class CreateCategoriesTable extends Migration
             $table->string('fr_Category_Name');
             $table->string('en_Category_Slug');
             $table->string('fr_Category_Slug');
-            $table->string('image')->nullable();
+            $table->string('Category_Icon')->nullable();
             $table->string('en_Description')->nullable();
             $table->string('fr_Description')->nullable();
+            $table->string('image')->nullable();
             $table->integer('Status')->default(1);
             $table->timestamps();
         });

@@ -74,7 +74,7 @@
                 <a class="single-categorie" href="{{ route('category.product', $item->id) }}">
                     <div class="categorie-wrap">
                         <div class="categorie-icon">
-                            <div class="circle-image" style="background-image: url('im.png')"></div>
+                            <div class="circle-image" style="background-image: url('{{ asset(CategoryImage() . $item->image) }}')"></div>
                         </div>
                         <div class="categorie-info">
                             <h3 class="categorie-name">
@@ -507,7 +507,7 @@
 <!-- Trending Products area end here  -->
 
 <!-- product banenr area start here  -->
-<div class="product-banner pb-100">
+{{-- <div class="product-banner pb-100">
     <div class="container">
         <div class="row">
             @foreach ($promotion as $promo)
@@ -522,7 +522,7 @@
         </div>
         @endforeach
     </div>
-</div>
+</div> --}}
 <!-- product banner area end here  -->
 <!-- Blog area start here  -->
 <div class="blog-area section-top section-bg pb-100">
@@ -548,8 +548,11 @@
                 <!-- Blog Item Start -->
                 <div class="single-grid-blog">
                     <div class="blog-thumbnail">
-                        <a href="{{ route('blog.details', $blog->id) }}"><img class="thumbnail-image"
+                        <a href="{{ route('blog.details', $blog->id) }}">
+                            
+                            <img class="thumbnail-image"
                                 src="{{ asset(BlogImage() . $blog->Small_Image) }}" alt="blog" /></a>
+                                
                     </div>
                     <div class="blog-info">
                         <ul class="blog-category">
@@ -582,7 +585,7 @@
 <!-- Image Gallery area end here  -->
 
 <!-- Testimonial ara start here  -->
-<div class="testimonial-area section section-bg">
+{{-- <div class="testimonial-area section section-bg">
     <div class="container">
         <div class="section-header-area text-center">
             <h3 class="sub-title">{{ __('Testimonial') }}</h3>
@@ -657,5 +660,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Testimonial ara end here  -->

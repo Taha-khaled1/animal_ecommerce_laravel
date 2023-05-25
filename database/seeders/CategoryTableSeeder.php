@@ -41,7 +41,7 @@ class CategoryTableSeeder extends Seeder
         Category::create([
             'en_Category_Name'=>'Sports',
             'fr_Category_Name'=>'رياضات',
-            'image'=>'icon flaticon-blazer',
+            'image'=>'im.png',
             'en_Description'=>'Sports products',
             'fr_Description'=>'رياضات',
             'en_Category_Slug'=>'sports',
@@ -50,7 +50,7 @@ class CategoryTableSeeder extends Seeder
         Category::create([
             'en_Category_Name'=>'Blazers Collection',
             'fr_Category_Name'=>'مجموعة بليزر',
-            'image'=>'icon flaticon-blazer',
+            'image'=>'im.png',
             'en_Description'=>'Dress For Man And Women',
             'fr_Description'=>'فستان للرجال والنساء',
             'en_Category_Slug'=>'blazers-collection',
@@ -59,7 +59,7 @@ class CategoryTableSeeder extends Seeder
         Category::create([
             'en_Category_Name'=>'Hoodie Collection',
             'fr_Category_Name'=>'مجموعة هوديي',
-            'image'=>'icon flaticon-hoodie',
+            'image'=>'im.png',
             'en_Description'=>'Dress For Man And Women',
             'fr_Description'=>'فستان للرجال والنساء',
             'en_Category_Slug'=>'hoodie-collection',
@@ -68,7 +68,7 @@ class CategoryTableSeeder extends Seeder
         Category::create([
             'en_Category_Name'=>'Long Sleeve Wear',
             'fr_Category_Name'=>'ملابس طويلة سليف',
-            'image'=>'icon flaticon-long-sleeve',
+            'image'=>'im.png',
             'en_Description'=>'Dress For Man And Women',
             'fr_Description'=>'فستان للرجال والنساء',
             'en_Category_Slug'=>'long-sleeve-wear',
@@ -77,7 +77,7 @@ class CategoryTableSeeder extends Seeder
         Category::create([
             'en_Category_Name'=>'Waistcoart Collection',
             'fr_Category_Name'=>'ملابس طويلة سليف',
-            'image'=>'icon flaticon-waistcoat',
+            'image'=>'im.png',
             'en_Description'=>'Dress For Man And Women',
             'fr_Description'=>'فستان للرجال والنساء',
             'en_Category_Slug'=>'waistcoart-collection',
@@ -86,7 +86,7 @@ class CategoryTableSeeder extends Seeder
         Category::create([
             'en_Category_Name'=>'Long Sleeve Wear',
             'fr_Category_Name'=>'ملابس طويلة سليف',
-            'image'=>'icon flaticon-long-sleeve',
+            'image'=>'im.png',
             'en_Description'=>'Dress For Man And Women',
             'fr_Description'=>'فستان للرجال والنساء',
             'en_Category_Slug'=>'long-sleeve-wear-1',
