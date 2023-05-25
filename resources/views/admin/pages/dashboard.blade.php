@@ -1,6 +1,21 @@
+
+@php
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+@endphp
 @extends('admin.master', ['menu' => 'dashboard'])
 @section('title', isset($title) ? $title : '')
 @section('content')
+{{-- {{__('Hi')}} {{ trans('ar.Hi') }}
+<a href="{{ url('language/en') }}">English</a>
+<a href="{{ url('language/ar') }}">Arabic</a>
+
+@if( LaravelLocalization::getCurrentLocaleDirection() == 'rtl')
+ <p>hi back  </p>
+@else
+  <p>السلام عليكم</p>
+@endif --}}
+
+<h1>{{ trans('messages.welcome') }}</h1>
     <div class="row">
         <div class="col-md-12">
             <div class="breadcrumb__content">

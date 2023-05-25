@@ -21,6 +21,8 @@ use App\Http\Controllers\Frontend\SubscribeSessionController;
 use App\Http\Controllers\Frontend\PaymentController;
 use App\Http\Controllers\Frontend\PageController;
 use App\Http\Controllers\SslCommerzPaymentController;
+use Illuminate\View\View;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 //Route::redirect('/', '');
 Route::post('currency-price', [CartController::class, 'currencyPrice'])->name('currency_price');
@@ -151,4 +153,3 @@ Route::post('/success', [SslCommerzPaymentController::class, 'success']);
 Route::post('/fail', [SslCommerzPaymentController::class, 'fail']);
 Route::post('/cancel', [SslCommerzPaymentController::class, 'cancel']);
 Route::post('/ipn', [SslCommerzPaymentController::class, 'ipn']);
-//SSLCOMMERZ END

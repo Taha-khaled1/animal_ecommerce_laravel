@@ -7,7 +7,8 @@ use App\Models\Menu;
 use App\Models\Setting;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
-
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\App;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -26,7 +27,19 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
+    {    
+        $jsonTranslationsPath = resource_path('lang/' . App::getLocale() . '/messages.json');
+
+        if (File::exists($jsonTranslationsPath)) {
+            $translations = json_decode(File::get($jsonTranslationsPath), true);
+            $this->app->singleton('translator', function ($app) use ($translations) {
+                return new \Illuminate\Translation\Translator(
+                    new \Illuminate\Translation\FileLoader(new \Illuminate\Filesystem\Filesystem(), resource_path('lang')),
+                    $app['config']['app.locale']
+                );
+            });
+            $this->app->make('translator')->addLines($translations, App::getLocale());
+        }
         Schema::defaultStringLength(191);
         if (file_exists(storage_path('installed'))) {
 

@@ -1,7 +1,7 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
-
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Controller;
 use App\Models\Language;
 use Illuminate\Http\Request;
@@ -66,4 +66,12 @@ class LanguageController extends Controller
 
         return redirect()->back()->with('success', __('Language Updated Successfully.'));
     }
+
+
+
+    public function switchLanguage($language)
+{
+    App::setLocale($language);
+    return Redirect::back();
+}
 }

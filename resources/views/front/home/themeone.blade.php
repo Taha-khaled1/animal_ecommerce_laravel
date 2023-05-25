@@ -34,6 +34,10 @@
         @endforeach  
     </div>
 </div>
+
+{{__('Hi')}} {{ trans('ar.Hi') }}
+<a href="{{ url('language/en') }}">English</a>
+<a href="{{ url('language/ar') }}">Arabic</a>
 <!-- hero-section area end here  -->
 
 <!-- brads area start here  -->

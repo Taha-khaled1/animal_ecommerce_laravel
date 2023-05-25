@@ -40,6 +40,7 @@ use App\Http\Controllers\Admin\SeoController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\SitemapController;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 Route::get('/admin/login', [AuthController::class, 'login'])->name('admin.login')->middleware('guest');
 Route::post('/admin/login', [AuthController::class, 'LoginDashboard'])->name('login.post');
@@ -326,7 +327,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
     Route::get('/language-list', [LanguageController::class, 'languageList'])->name('language_list')->middleware(['permission:cms-list|cms-create|cms-edit|cms-delete']);
     Route::get('/language-edit/{id}', [LanguageController::class, 'languageEdit'])->name('language_edit')->middleware(['permission:cms-edit']);
     Route::post('/language-update/{id}', [LanguageController::class, 'languageUpdate'])->name('language_update')->middleware(['permission:cms-edit', 'isDemo']);
-
+    Route::get('language/{language}', [LanguageController::class, 'switchLanguage'])->middleware(['permission:cms-edit', 'isDemo']);
     //Taxation
     Route::get('/country-tax-list', [EcommerceController::class, 'countryTaxList'])->name('country_taxation_list')->middleware(['permission:tax-list|tax-create|tax-edit|tax-delete']);
     Route::post('/country-tax-store', [EcommerceController::class, 'countryTaxStore'])->name('country_tax_store')->middleware(['permission:tax-create', 'isDemo']);
