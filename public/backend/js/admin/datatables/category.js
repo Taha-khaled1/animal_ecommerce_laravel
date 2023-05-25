@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     "use strict";
     $(document).ready(function () {
         $('#CategoryTable').DataTable({
@@ -6,6 +6,10 @@
             serverSide: true,
             ajax: $('#table-url').data("url"),
             columns: [
+                {
+                    data: 'Image',
+                    name: 'Image'
+                },
                 {
                     data: 'Category_Name',
                     name: 'Category_Name'
@@ -17,10 +21,6 @@
                 {
                     data: 'Description',
                     name: 'Description'
-                },
-                {
-                    data: 'Category_Icon',
-                    name: 'Category_Icon'
                 },
                 {
                     data: 'Status',

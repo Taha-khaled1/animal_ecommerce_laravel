@@ -39,9 +39,13 @@
                                                 <label>{{ __('Category Name '.langString('fr'))}}</label>
                                                 <input type="text" id="fr_category_name" name="fr_category_name"  value="{{ old('fr_category_name') }}" placeholder="Name (Arabic)">
                                             </div>
+{{--                                            <div class="input__group mb-25">--}}
+{{--                                                <label>{{ __('Icon Class')}}</label>--}}
+{{--                                                <input type="text" id="icon_class" name="icon_class" value="{{ old('icon_class') }}" placeholder="Icon">--}}
+{{--                                            </div>--}}
                                             <div class="input__group mb-25">
-                                                <label>{{ __('Icon Class')}}</label>
-                                                <input type="text" id="icon_class" name="icon_class" value="{{ old('icon_class') }}" placeholder="Icon">
+                                                <label>{{ __('Image')}}</label>
+                                                <input type="file" id="image" name="image" accept="image/*" >
                                             </div>
                                             <div class="input__group mb-25">
                                                 <label>{{__('Description '.langString('en'))}}</label>
