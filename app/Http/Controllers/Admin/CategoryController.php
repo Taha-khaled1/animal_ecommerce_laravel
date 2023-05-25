@@ -68,7 +68,7 @@ class CategoryController extends Controller
 
     public function categoryStore(CategoryRequest $request)
     {
-        $data = $request->all();
+        
         if (!empty($request->image)) {
             $data['image'] = fileUpload($request['image'], CategoryImage());
         }
@@ -79,7 +79,7 @@ class CategoryController extends Controller
             'fr_Category_Name' => $request->fr_category_name,
             'fr_Description' => $request->fr_description,
             'fr_Category_Slug' => $this->slugify($request->fr_category_name),
-            'image' => $data['image'],
+            'image' => $request->image,
 //            'Category_Icon' => $request->icon_class
         ]);
         if ($category) {
