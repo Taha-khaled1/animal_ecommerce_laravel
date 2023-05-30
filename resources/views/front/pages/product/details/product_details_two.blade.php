@@ -338,7 +338,7 @@
         </div>
         <div class="row">
             @forelse($similar_product as $product)
-                <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="single-grid-product-v2">
                         <div class="product-top">
                             <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img

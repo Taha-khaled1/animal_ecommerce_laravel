@@ -284,13 +284,13 @@
             slidesToScroll: 2
           }
         },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
+        // {
+        //   breakpoint: 576,
+        //   settings: {
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1
+        //   }
+        // }
       ]
     });
     $('.direction-rtl .blog-slide').slick({
@@ -320,13 +320,13 @@
             slidesToScroll: 2
           }
         },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
+        // {
+        //   breakpoint: 576,
+        //   settings: {
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1
+        //   }
+        // }
       ]
     });
 

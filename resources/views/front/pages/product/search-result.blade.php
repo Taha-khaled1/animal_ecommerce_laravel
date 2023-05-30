@@ -144,7 +144,7 @@
                         <div class="product-list">
                             <div class="row">
                                 @foreach($products as $product)
-                                    <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
+                                    <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-6">
                                         <div class="single-grid-product">
                                             <div class="product-top">
                                                 <a href="{{route('single.product',$product->en_Product_Slug)}}"><img class="product-thumbnal" src="{{asset(ProductImage().$product->Primary_Image)}}" alt="product" /></a>

@@ -1,4 +1,114 @@
 <!-- footer area start here -->
+<div class='container d-lg-none d-block'>
+    <div class='frame'>
+      <div class='bar fixed-bottom'>
+        <a href='{{ route('front') }}' class='els-wrap el-1'>
+          <div class='icon'>
+            <i class="fa fa-house-user"></i>
+          </div>
+          <p class='label'>{{ __('Home') }}</p>
+        </a>
+        <a href='{{ route('user.profile') }}' class='els-wrap el-2'>
+          <div class='icon'>
+            <i class="far fa-user-circle"></i>
+          </div>
+          <p class='label'>{{ __('Profile') }}</p>
+        </a>
+        <a data-bs-toggle="offcanvas" href="#cartOffcanvasSidebar" role="button"
+        aria-controls="cartOffcanvasSidebar" class='els-wrap el-3'>
+          <div class='icon custom-icon'>
+            <i class="flaticon-shopping-bag"></i>
+          </div>
+          <p class='label custom-label'>{{ __('Cart') }}</p>
+        </a>
+        <a href='{{ route('blog') }}' class='els-wrap el-3'>
+            <div class='icon'>
+              <i class="fa fa-blog"></i>
+            </div>
+            <p class='label'>{{ __('Blog') }}</p>
+          </a>
+        <a href='{{ route('wishlist') }}' class='els-wrap el-4'>
+          <div class='icon'>
+            <i class="flaticon-like"></i>
+          </div>
+          <p class='label'>{{ __('Wishlist') }}</p>
+        </a>
+      </div>
+    </div>
+</div>  
+<div class="d-lg-none d-sm-block bg-light pt-5">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item border-0 border-bottom">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-white collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#Category">
+                <h3 class="widget-title mb-0">{{ __('Category') }}</h3>
+            </button>
+          </h2>
+          <div id="Category" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <ul class="widget-menu list-styled">
+                    @foreach (Category() as $item)
+                        <li class="menu-item"><a class="menu-link text-dark"
+                                href="{{ route('category.product', $item->id) }}">{{ langConverter($item->en_Category_Name, $item->fr_Category_Name) }}</a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item border-0 border-bottom">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-white collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#Brand">
+                <h3 class="widget-title mb-0">{{ __('Brand') }}</h3>
+            </button>
+          </h2>
+          <div id="Brand" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <ul class="widget-menu">
+                    @foreach (Brnad() as $item)
+                        <li class="menu-item"><a class="menu-link text-dark"
+                                href="{{ route('brand.product', $item->id) }}">{{ langConverter($item->en_BrandName, $item->fr_BrandName) }}</a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-white collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#Customer_Service">
+                <h3 class="widget-title mb-0">{{ __('Customer Service') }}</h3>
+            </button>
+          </h2>
+          <div id="Customer_Service" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <ul class="widget-menu">
+                    <li class="menu-item"><a class="menu-link text-dark"
+                            href="{{ route('faq') }}">{{ __('Help & FAQ') }}</a></li>
+                    <li class="menu-item"><a class="menu-link text-dark"
+                            href="{{ route('terms.conditions') }}">{{ __('Terms of Conditions') }}</a>
+                    </li>
+                    <li class="menu-item"><a class="menu-link text-dark"
+                            href="{{ route('privacy.policy') }}">{{ __('Privacy Policy') }}</a>
+                    </li>
+                    <li class="menu-item"><a class="menu-link text-dark"
+                            href="{{ route('refund.policy') }}">{{ __('Online Returns Policy') }}</a>
+                    </li>
+                    <li class="menu-item"><a class="menu-link text-dark"
+                            href="{{ route('shipping.return') }}">{{ __('Shipping & Return') }}</a>
+                    </li>
+                    <li class="menu-item"><a class="menu-link text-dark"
+                            href="{{ route('contact.us') }}">{{ __('Contact Us') }}</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
 <footer class="footer-area">
     <div class="footer-widget-area">
         <div class="container-fluid">
@@ -52,7 +162,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-8 col-md-8 col-sm-8">
+                <div class="col-xl-6 col-lg-8 col-md-8 col-sm-8 d-lg-block d-none">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="single-widget">

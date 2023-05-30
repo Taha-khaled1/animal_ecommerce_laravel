@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home-2 - Zairito - eCommerce HTML Template</title>
-    <meta name="description" content="Zairito - eCommerce HTML Template" />
+    <title>Home-2 - Elegent Pet Care - eCommerce HTML Template</title>
+    <meta name="description" content="Elegent Pet Care - eCommerce HTML Template" />
     <meta name="keywords"
         content="business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive" />
-    <meta name="author" content="Zairito" />
+    <meta name="author" content="Elegent Pet Care" />
 
     <!-- fonts file -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
@@ -91,7 +91,7 @@
                 </div>
                 <div class="brand-logo-area">
                     <a href="index2.html" class="brand-logo"><img class="brand-image"
-                            src="{{ asset('/') }}assets/images/zairito-home-two.png" alt="zairito-home-two" /></a>
+                            src="{{ asset('/') }}assets/images/Elegent Pet Care-home-two.png" alt="Elegent Pet Care-home-two" /></a>
                 </div>
                 <div class="header-right">
                     <ul class="btn-list">
@@ -221,7 +221,7 @@
             <div class="menu-wrap">
                 <div class="header-left">
                     <a class="brand-logo" href="index.html"><img class="brand-image"
-                            src="{{ asset('/') }}assets/images/zairito-home-two.png" alt="zairito" /></a>
+                            src="{{ asset('/') }}assets/images/Elegent Pet Care-home-two.png" alt="Elegent Pet Care" /></a>
                 </div>
                 <div class="header-right">
                     <ul class="btn-list">
@@ -249,7 +249,7 @@
         <div class="mobile-menu-area">
             <div class="offcanvas-header">
                 <a class="brand-logo" href="index.html"><img class="brand-image"
-                        src="{{ asset('/') }}assets/images/zairito-home-two.png" alt="zairito" /></a>
+                        src="{{ asset('/') }}assets/images/Elegent Pet Care-home-two.png" alt="Elegent Pet Care" /></a>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
@@ -476,7 +476,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-md-6 col-7">
                             <div class="hero-content">
-                                <h1 class="hero-title">Exclusive Summer Sale is Going On zairito The Shopify </h1>
+                                <h1 class="hero-title">Exclusive Summer Sale is Going On Elegent Pet Care The Shopify </h1>
                                 <p class="hero-text">Curabitur non nulla sit amet nisl tempus convallis quis lectus.
                                     porttitor lectus
                                     nibh. Curabitur arcu erat, accu msan id imperdiet et, porttitor at. Cras ultricies
@@ -2185,7 +2185,7 @@
     <div class="image-gallery-area-v2 section-top pb-110">
         <div class="container">
             <div class="section-header-two text-center">
-                <h2 class="section-title"> Zairito Gallery <br /> For Online Experience</h2>
+                <h2 class="section-title"> Elegent Pet Care Gallery <br /> For Online Experience</h2>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-8">
@@ -2264,7 +2264,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5">
                         <div class="blog-top-left">
-                            <h2 class="blog-left-title">News And Views From <br /> The Zairito Blog</h2>
+                            <h2 class="blog-left-title">News And Views From <br /> The Elegent Pet Care Blog</h2>
                             <p class="blog-left-subtitle">Quisque velit nisi, pretium ut lacinia in, elementum id
                                 elementum enim. Nulla porttitor accumssan tincidunt. Donec rutrum congue leo eget malew
                                 susada. Cras ultricies ligula sed magna dictum </p>
@@ -2364,7 +2364,7 @@
                                 States</p>
                             <div class="block-content mb-30">
                                 <p class="contact">Call us: 1.800.000.6690</p>
-                                <p class="contact">Email: support@zainikthemes.com</p>
+                                <p class="contact">Email: support@Elegent Pet Cares.com</p>
                             </div>
                         </div>
                     </div>
@@ -2441,7 +2441,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <p class="copyright-text">Designed And Developed By Team <a class="brand-name"
-                                    href="#">Zainiktheme</a> Digital Agency @2021</p>
+                                    href="#">Elegent Pet Care</a> Digital Agency @2021</p>
                         </div>
                         <div class="col-lg-6 text-lg-end">
                             <img class="payment-icons" src="{{ asset('/') }}assets/images/accepts-image.png"
@@ -2469,9 +2469,9 @@
                             <div class="row">
                                 <div class="col-lg-7 col-md-12">
                                     <div class="offer_modal_left">
-                                        <img src="{{ asset('/') }}assets/images/zairito.png" alt="logo">
+                                        <img src="{{ asset('/') }}assets/images/Elegent Pet Care.png" alt="logo">
                                         <h3>SUBSCRIBE TO NEWSLETTER</h3>
-                                        <p class="m-0">Subscribe to the Zairito mailing list to receive updates
+                                        <p class="m-0">Subscribe to the Elegent Pet Care mailing list to receive updates
                                             on new arrivals, special offers and our promotions.</p>
                                         <form>
                                             <div class="input-group mb-3">

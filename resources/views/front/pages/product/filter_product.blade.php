@@ -1,7 +1,7 @@
 <div class="product-list">
     <div class="row">
         @foreach($filters as $product)
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="single-grid-product">
                     <div class="product-top">
                         <a href="{{route('single.product',$product->en_Product_Slug)}}"><img class="product-thumbnal" src="{{asset(ProductImage().$product->Primary_Image)}}" alt="{{__('product')}}" /></a>

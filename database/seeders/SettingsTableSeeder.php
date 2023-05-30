@@ -14,21 +14,21 @@ class SettingsTableSeeder extends Seeder
      */
     public function run()
     {
-        Setting::create(['slug' => 'app_title', 'value' => 'Zairito',]);
+        Setting::create(['slug' => 'app_title', 'value' => 'Elegent Pet Care',]);
         Setting::create(['slug' => 'tax_percentage', 'value' => 15,]);
         Setting::create(['slug' => 'shipping_charge', 'value' => 60,]);
         Setting::create(['slug' => 'estimating_delivery', 'value' => '7 days',]);
-        Setting::create(['slug' => 'title', 'value' => 'Zairito - Ecommerce',]);
+        Setting::create(['slug' => 'title', 'value' => 'Elegent Pet Care - Ecommerce',]);
         Setting::create(['slug' => 'main_logo', 'value' => 'logo.png',]);
         Setting::create(['slug' => 'footer_logo', 'value' => 'footer-logo.png',]);
-        Setting::create(['slug' => 'footer_title', 'value' => 'Designed & Developed By Zainiktheme',]);
+        Setting::create(['slug' => 'footer_title', 'value' => 'Designed & Developed By Elegent Pet Care',]);
         Setting::create(['slug' => 'favicon', 'value' => 'favicon.png',]);
         Setting::create(['slug' => 'version', 'value' => 1.0,]);
-        Setting::create(['slug' => 'meta_author', 'value' => 'zainiktheme',]);
-        Setting::create(['slug' => 'meta_description', 'value' => 'Zairito - Ecommerce App',]);
+        Setting::create(['slug' => 'meta_author', 'value' => 'Elegent Pet Care',]);
+        Setting::create(['slug' => 'meta_description', 'value' => 'Elegent Pet Care - Ecommerce App',]);
         Setting::create(['slug' => 'meta_keywords', 'value' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',]);
         Setting::create(['slug' => 'call_us', 'value' => '+777 2345 7886',]);
-        Setting::create(['slug' => 'email', 'value' => 'support@zainikthemes.com',]);
+        Setting::create(['slug' => 'email', 'value' => 'support@Elegent Pet Cares.com',]);
         Setting::create(['slug' => 'address', 'value' => '685 Market Street',]);
         Setting::create(['slug' => 'state', 'value' => 'San Francisco, CA 94106,',]);
         Setting::create(['slug' => 'country', 'value' => 'United States',]);

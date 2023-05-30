@@ -349,7 +349,7 @@
                 </ul>
             </li>
         @endcanany
-        <li class="{{ isset($menu) && $menu == 'theme_management' ? 'mm-active' : '' }}">
+        {{-- <li class="{{ isset($menu) && $menu == 'theme_management' ? 'mm-active' : '' }}">
             <a class="has-arrow" href="#">
                 <i class="fas fa-cog"></i>
                 <span>{{ __('Theme Management') }}</span>
@@ -359,7 +359,7 @@
                     <a href="{{ route('admin.theme') }}">{{ __('Select Theme') }}</a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
 
         <li class="{{ isset($menu) && $menu == 'slider_banner' ? 'mm-active' : '' }}">
             <a class="has-arrow" href="#">

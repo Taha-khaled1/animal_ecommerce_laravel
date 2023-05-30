@@ -34,10 +34,6 @@
         @endforeach  
     </div>
 </div>
-
-{{__('Hi')}} {{ trans('ar.Hi') }}
-<a href="{{ url('language/en') }}">English</a>
-<a href="{{ url('language/ar') }}">Arabic</a>
 <!-- hero-section area end here  -->
 
 <!-- brads area start here  -->
@@ -116,7 +112,7 @@
         </div>
         <div class="row">
             @foreach ($products as $product)
-                <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 col-6">
                     <div class="single-grid-product">
                         <div class="product-top">
                             <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img
@@ -160,6 +156,176 @@
                             <a href="javascript:void(0)" title="{{ __('Add To Cart') }}" class="add-cart addCart"
                                 data-id="{{ $product->id }}">{{ __('Add To Cart') }} <i
                                     class="icon fas fa-plus-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+
+        </div>
+    </div>
+</div>
+<div class="featured-productss-area section-top pb-100">
+    <div class="container">
+        <div class="section-header-area">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="sub-title">
+                        {{ langConverter(siteContentHomePage('products')->en_Title, siteContentHomePage('products')->fr_Title) }}
+                    </h3>
+                    <h2 class="section-title">
+                        @if ( Config::get('app.locale') == 'en')
+                            Grooming services
+                        @elseif ( Config::get('app.locale') == 'fr' )
+                            خدمات الإستمالة 
+                          @endif
+                    </h2>
+                </div>
+                <div class="col-md-6 align-self-end text-md-end">
+                    <a href="#" class="see-btn">{{ __('See All') }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach ($products as $product)
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 col-6">
+                    <div class="single-grid-product">
+                        <div class="product-top">
+                            <a href="#"><img
+                                    class="product-thumbnal"
+                                    src="{{ asset(ProductImage() . $product->Primary_Image) }}"
+                                    alt="{{ __('product') }}" /></a>
+                            {{-- <div class="product-flags">
+                                <span class="product-flag discount">
+                                    @if ( Config::get('app.locale') == 'en')
+                                        Abu Dhabi
+                                    @elseif ( Config::get('app.locale') == 'fr' )
+                                        ابو ظبي 
+                                      @endif
+                                </span>
+                            </div> --}}
+                            {{-- <ul class="prdouct-btn-wrapper">
+                                <li class="single-product-btn">
+                                    <a class="product-btn CompareList" data-id="{{ $product->id }}"
+                                        title="{{ __('Add To Compare') }}"><i class="icon flaticon-bar-chart"></i></a>
+                                </li>
+                                <li class="single-product-btn">
+                                    <a class="product-btn MyWishList" data-id="{{ $product->id }}"
+                                        title="{{ __('Add To Wishlist') }}"><i class="icon flaticon-like"></i></a>
+                                </li>
+                            </ul> --}}
+                        </div>
+                        <div class="product-info text-center">
+                            @foreach ($product->product_tags as $ppt)
+                                <h4 class="product-catagory">{{ $ppt->tag }}</h4>
+                            @endforeach
+                            <input type="hidden" name="quantity" value="1" id="product_quantity">
+                            <h3 class="product-name"><a class="product-link"
+                                    href="#"> {{ langConverter($product->en_Product_Name, $product->fr_Product_Name) }}</a>
+                            </h3>
+                            <p class="mb-0">
+                                PM 8:00 - 01:00 - 
+                                <span>
+                                    @if ( Config::get('app.locale') == 'en')
+                                        Abu Dhabi
+                                    @elseif ( Config::get('app.locale') == 'fr' )
+                                        ابو ظبي 
+                                    @endif
+                                </span>
+                            </p>
+                            <!-- This is server side code. User can not modify it. -->
+                            {!! productReview($product->id) !!}
+                            {{-- <div class="product-price">
+                                <span class="regular-price">{{ currencyConverter($product->Price) }}</span>
+                                <span class="price">{{ currencyConverter($product->Discount_Price) }}</span>
+                            </div> --}}
+                            {{-- <a href="javascript:void(0)" title="{{ __('Add To Cart') }}" class="add-cart addCart"
+                                data-id="{{ $product->id }}">{{ __('Add To Cart') }} <i
+                                    class="icon fas fa-plus-circle"></i></a> --}}
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+
+        </div>
+    </div>
+</div>
+<div class="featured-productss-area section-top pb-100">
+    <div class="container">
+        <div class="section-header-area">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="sub-title">
+                        {{ langConverter(siteContentHomePage('products')->en_Title, siteContentHomePage('products')->fr_Title) }}
+                    </h3>
+                    <h2 class="section-title">
+                        @if ( Config::get('app.locale') == 'en')
+                            Veterinary services
+                        @elseif ( Config::get('app.locale') == 'fr' )
+                            خدمات بيطرية 
+                          @endif
+                    </h2>
+                </div>
+                <div class="col-md-6 align-self-end text-md-end">
+                    <a href="#" class="see-btn">{{ __('See All') }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach ($products as $product)
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 col-6">
+                    <div class="single-grid-product">
+                        <div class="product-top">
+                            <a href="#"><img
+                                    class="product-thumbnal"
+                                    src="{{ asset(ProductImage() . $product->Primary_Image) }}"
+                                    alt="{{ __('product') }}" /></a>
+                            {{-- <div class="product-flags">
+                                <span class="product-flag discount">
+                                    @if ( Config::get('app.locale') == 'en')
+                                        Abu Dhabi
+                                    @elseif ( Config::get('app.locale') == 'fr' )
+                                        ابو ظبي 
+                                      @endif
+                                </span>
+                            </div> --}}
+                            {{-- <ul class="prdouct-btn-wrapper">
+                                <li class="single-product-btn">
+                                    <a class="product-btn CompareList" data-id="{{ $product->id }}"
+                                        title="{{ __('Add To Compare') }}"><i class="icon flaticon-bar-chart"></i></a>
+                                </li>
+                                <li class="single-product-btn">
+                                    <a class="product-btn MyWishList" data-id="{{ $product->id }}"
+                                        title="{{ __('Add To Wishlist') }}"><i class="icon flaticon-like"></i></a>
+                                </li>
+                            </ul> --}}
+                        </div>
+                        <div class="product-info text-center">
+                            @foreach ($product->product_tags as $ppt)
+                                <h4 class="product-catagory">{{ $ppt->tag }}</h4>
+                            @endforeach
+                            <input type="hidden" name="quantity" value="1" id="product_quantity">
+                            <h3 class="product-name"><a class="product-link"
+                                    href="#"> {{ langConverter($product->en_Product_Name, $product->fr_Product_Name) }}</a>
+                            </h3>
+                            <p class="mb-0">
+                                PM 8:00 - 01:00 - 
+                                <span>
+                                    @if ( Config::get('app.locale') == 'en')
+                                        Abu Dhabi
+                                    @elseif ( Config::get('app.locale') == 'fr' )
+                                        ابو ظبي 
+                                    @endif
+                                </span>
+                            </p>
+                            <!-- This is server side code. User can not modify it. -->
+                            {!! productReview($product->id) !!}
+                            {{-- <div class="product-price">
+                                <span class="regular-price">{{ currencyConverter($product->Price) }}</span>
+                                <span class="price">{{ currencyConverter($product->Discount_Price) }}</span>
+                            </div> --}}
+                            {{-- <a href="javascript:void(0)" title="{{ __('Add To Cart') }}" class="add-cart addCart"
+                                data-id="{{ $product->id }}">{{ __('Add To Cart') }} <i
+                                    class="icon fas fa-plus-circle"></i></a> --}}
                         </div>
                     </div>
                 </div>
@@ -270,7 +436,7 @@
                     id="new-arrival" role="tabpanel" aria-labelledby="new-arrival-tab">
                     <div class="row">
                         @foreach ($new_arrivals as $product)
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <div class="single-grid-product">
                                     <div class="product-top">
                                         <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img
@@ -331,7 +497,7 @@
                     id="best-selling" role="tabpanel" aria-labelledby="best-selling-tab">
                     <div class="row">
                         @foreach ($best_sellings as $product)
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <div class="single-grid-product">
                                     <div class="product-top">
                                         <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img
@@ -392,7 +558,7 @@
                     id="on-sell" role="tabpanel" aria-labelledby="on-sell-tab">
                     <div class="row">
                         @foreach ($on_sales as $product)
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <div class="single-grid-product">
                                     <div class="product-top">
                                         <a href="{{ route('single.product', $product->en_Product_Slug) }}}"><img
@@ -451,7 +617,7 @@
                     id="featured-items" role="tabpanel" aria-labelledby="featured-items-tab">
                     <div class="row">
                         @foreach ($featured_products as $product)
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <div class="single-grid-product">
                                     <div class="product-top">
                                         <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img

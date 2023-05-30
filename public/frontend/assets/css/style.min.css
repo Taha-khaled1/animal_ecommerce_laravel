@@ -1,7 +1,7 @@
 :root {
     font-size: 62.5%;
-    --primary-color: #EF1B27;
-    --hover-color: #CC1F28;
+    --primary-color: #1BBCB6;
+    --hover-color: #148f8b;
     --primary-color-two: #0D7862;
     --hover-color-two: #04B691;
     --primary-color-three: #5F8E3E;
@@ -455,6 +455,9 @@ ul {
 }
 
 @media (max-width: 991px) {
+    #scrollUp{
+        bottom: 87px;
+    }
     .section {
         padding: 6rem 0
     }
@@ -2531,7 +2534,7 @@ ul {
 }
 
 .mobile-header-area .header-right .header-btn.cart-btn .btn-left .count {
-    background-color: #EF1B27
+    background-color: var(--primary-color)
 }
 
 .mobile-header-area .header-right .menu-bar {
@@ -3255,7 +3258,7 @@ ul {
         line-height: 2.6rem
     }
     .hero-section .hero-slider .signle-slide {
-        height: 550px
+        height: 550px !important;
     }
 }
 
@@ -4073,7 +4076,7 @@ ul {
     font-size: 3.6rem;
     font-weight: 600;
     text-transform: capitalize;
-    color: var(--black)
+    color: #AA5908
 }
 
 .section-header-two {
@@ -8058,7 +8061,7 @@ ul {
     font-size: 2rem;
     font-weight: 500;
     text-transform: capitalize;
-    color: var(--black)
+    color: #AA5908
 }
 
 .sidebar-widget-area .search-widget .form-group {
@@ -14857,7 +14860,7 @@ ul {
     font-size: 2rem;
     font-weight: 600;
     text-transform: capitalize;
-    color: var(--white)
+    color: #AA5908
 }
 
 .footer-area .footer-widget-area .footer-brand-logo {
@@ -14987,7 +14990,7 @@ ul {
     -webkit-box-shadow: none;
     box-shadow: none;
     padding: 0;
-    background-color: #FCA610;
+    background-color: var(--primary-color);
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: capitalize;
@@ -15499,3 +15502,66 @@ ul {
 
 
 /*# sourceMappingURL=style.min.css.map */
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700,900");
+
+
+.bar {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(51, 51, 51, 0.4);
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 15px;
+}
+.custom-icon{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: #fff;
+    /* padding: 11px; */
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    transform: translateY(-15px);
+    box-shadow: 1px 3px 19px -8px #000;
+    border: 4px solid #FFF;
+}
+.custom-label{
+    transform: translateY(-9px);
+}
+.els-wrap {
+  background-size: 1200px;
+  background-position: 100% 50%;
+  color: #333333;
+  padding: 0 9px;
+  border-radius: 100px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+.els-wrap .icon {
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+.els-wrap .label {
+  /* font-weight: 600;
+  letter-spacing: 0.15em;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  font-size: 11px;
+  transition: opacity 400ms;
+  transition-delay: 130ms;
+  transition-timing-function: ease-out; */
+  font-size: 12px;
+  margin: 0;
+}

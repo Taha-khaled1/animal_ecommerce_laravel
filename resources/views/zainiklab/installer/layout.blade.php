@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ asset('files/favicon.png') }}" type="image/x-icon">
-    <title>@yield('title') | {{__('Zairito - Laravel eCommerce System | Single vendor | eCommerce CMS')}} </title>
+    <title>@yield('title') | {{__('Elegent Pet Care - Laravel eCommerce System | Single vendor | eCommerce CMS')}} </title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('zaifiles/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('zaifiles/assets/style.css') }}">
@@ -17,7 +17,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-8">
                     <div class="breadcrumb-text">
                         <a class="brand-logo" href="{{route('front')}}"><img src="{{ asset('zaifiles/assets/images/logo.png') }}" alt="logo" /></a>
-                        <h2>{{__('Zairito - Single vendor Laravel Ecommerce System')}}</h2>
+                        <h2>{{__('Elegent Pet Care - Single vendor Laravel Ecommerce System')}}</h2>
                         <p>{{ \Carbon\Carbon::parse(now())->format('l, j F Y') }}</p>
                     </div>
                 </div>

@@ -16,64 +16,64 @@ class SeoSettingsTableSeeder extends Seeder
     {
         SeoSetting::create([
             'slug' => 'home',
-            'title' => 'Home | Zairito - Laravel Ecommerce Application',
-            'description' => 'Zairito - Laravel Ecommerce Application',
+            'title' => 'Home | Elegent Pet Care - Laravel Ecommerce Application',
+            'description' => 'Elegent Pet Care - Laravel Ecommerce Application',
             'keywords' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',
         ]);
 
         SeoSetting::create([
             'slug' => 'about-us',
-            'title' => 'About Us | Zairito - Laravel Ecommerce Application',
-            'description' => 'Zairito - Laravel Ecommerce Application',
+            'title' => 'About Us | Elegent Pet Care - Laravel Ecommerce Application',
+            'description' => 'Elegent Pet Care - Laravel Ecommerce Application',
             'keywords' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',
         ]);
 
         SeoSetting::create([
             'slug' => 'blog',
-            'title' => 'Blogs | Zairito - Laravel Ecommerce Application',
-            'description' => 'Zairito - Laravel Ecommerce Application',
+            'title' => 'Blogs | Elegent Pet Care - Laravel Ecommerce Application',
+            'description' => 'Elegent Pet Care - Laravel Ecommerce Application',
             'keywords' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',
         ]);
 
         SeoSetting::create([
             'slug' => 'contact',
-            'title' => 'Contact Us| Zairito - Laravel Ecommerce Application',
-            'description' => 'Zairito - Laravel Ecommerce Application',
+            'title' => 'Contact Us| Elegent Pet Care - Laravel Ecommerce Application',
+            'description' => 'Elegent Pet Care - Laravel Ecommerce Application',
             'keywords' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',
         ]);
 
         SeoSetting::create([
             'slug' => 'all-products',
-            'title' => 'All Products| Zairito - Laravel Ecommerce Application',
-            'description' => 'Zairito - Laravel Ecommerce Application',
+            'title' => 'All Products| Elegent Pet Care - Laravel Ecommerce Application',
+            'description' => 'Elegent Pet Care - Laravel Ecommerce Application',
             'keywords' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',
         ]);
 
         SeoSetting::create([
             'slug' => 'cart',
-            'title' => 'Cart | Zairito - Laravel Ecommerce Application',
-            'description' => 'Zairito - Laravel Ecommerce Application',
+            'title' => 'Cart | Elegent Pet Care - Laravel Ecommerce Application',
+            'description' => 'Elegent Pet Care - Laravel Ecommerce Application',
             'keywords' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',
         ]);
 
         SeoSetting::create([
             'slug' => 'checkout',
-            'title' => 'Checkout | Zairito - Laravel Ecommerce Application',
-            'description' => 'Zairito - Laravel Ecommerce Application',
+            'title' => 'Checkout | Elegent Pet Care - Laravel Ecommerce Application',
+            'description' => 'Elegent Pet Care - Laravel Ecommerce Application',
             'keywords' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',
         ]);
 
         SeoSetting::create([
             'slug' => 'wishlist',
-            'title' => 'Wishlist | Zairito - Laravel Ecommerce Application',
-            'description' => 'Zairito - Laravel Ecommerce Application',
+            'title' => 'Wishlist | Elegent Pet Care - Laravel Ecommerce Application',
+            'description' => 'Elegent Pet Care - Laravel Ecommerce Application',
             'keywords' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',
         ]);
 
         SeoSetting::create([
             'slug' => 'compare',
-            'title' => 'Compare | Zairito - Laravel Ecommerce Application',
-            'description' => 'Zairito - Laravel Ecommerce Application',
+            'title' => 'Compare | Elegent Pet Care - Laravel Ecommerce Application',
+            'description' => 'Elegent Pet Care - Laravel Ecommerce Application',
             'keywords' => 'business,eCommerce, Ecommerce, ecommerce, shop, shopify, shopify ecommerce, creative, woocommerce, design, gallery, minimal, modern, html, html5, responsive',
         ]);
 

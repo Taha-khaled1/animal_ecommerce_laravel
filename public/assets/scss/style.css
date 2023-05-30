@@ -1,11 +1,11 @@
 /*
 ------------- Table of content ----------------
 
-Template Name: Zairito Responsive  HTML5 Template
-Template URI: http://zainiktheme.com
-Description: Zairito Responsive  HTML5 Template
+Template Name: Elegent Pet Care Responsive  HTML5 Template
+Template URI: http://Elegent Pet Care.com
+Description: Elegent Pet Care Responsive  HTML5 Template
 Author: Gobinda Sarkar
-Author URI: http://zairito.com
+Author URI: http://Elegent Pet Care.com
 Version: 1.0
 
 ---------------------- common content ----------
@@ -3266,7 +3266,7 @@ scrollUp
     line-height: 2.6rem;
   }
   .hero-section .hero-slider .signle-slide {
-    height: 550px;
+    height: 550px !important;
   }
 }
 
@@ -14924,10 +14924,10 @@ secendary-tabs
   .footer-area .footer-widget-area .social-media li {
     margin-right: .5rem;
   }
-  .footer-area .footer-widget-area .social-media li a {
+  /* .footer-area .footer-widget-area .social-media li a {
     width: 3.5rem;
     height: 3.5rem;
-  }
+  } */
   .footer-area .footer-widget-area .widget-menu .menu-item {
     margin-bottom: 1rem;
   }

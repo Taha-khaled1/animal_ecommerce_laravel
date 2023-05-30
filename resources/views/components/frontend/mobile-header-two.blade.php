@@ -4,7 +4,7 @@
             <div class="menu-wrap">
                 <div class="header-left">
                     <a class="brand-logo" href="{{ route('front') }}"><img class="brand-image"
-                            src="{{ asset(IMG_LOGO_PATH . $allsettings['main_logo']) }}" alt="zairito" /></a>
+                            src="{{ asset(IMG_LOGO_PATH . $allsettings['main_logo']) }}" alt="Elegent Pet Care" /></a>
                 </div>
                 <div class="header-right">
                     <ul class="btn-list">
