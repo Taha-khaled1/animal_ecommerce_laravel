@@ -2502,7 +2502,7 @@ ul {
     width: 3rem
 }
 
-.mobile-header-area .header-right .header-btn .btn-left .count {
+ .count {
     position: absolute;
     right: 0;
     top: -3px;
@@ -2525,7 +2525,7 @@ ul {
     color: var(--black)
 }
 
-.mobile-header-area .header-right .header-btn.wishlist-btn .btn-left .count {
+ .count {
     background-color: #FCA610
 }
 
@@ -2533,7 +2533,7 @@ ul {
     background-color: #00AA6C
 }
 
-.mobile-header-area .header-right .header-btn.cart-btn .btn-left .count {
+ .count {
     background-color: var(--primary-color)
 }
 

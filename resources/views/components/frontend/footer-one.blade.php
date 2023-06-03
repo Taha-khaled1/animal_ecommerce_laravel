@@ -18,6 +18,7 @@
         aria-controls="cartOffcanvasSidebar" class='els-wrap el-3'>
           <div class='icon custom-icon'>
             <i class="flaticon-shopping-bag"></i>
+            <span class="count totalCountItem shadow">{{ cartCountItem() }}</span>
           </div>
           <p class='label custom-label'>{{ __('Cart') }}</p>
         </a>
@@ -30,6 +31,7 @@
         <a href='{{ route('wishlist') }}' class='els-wrap el-4'>
           <div class='icon'>
             <i class="flaticon-like"></i>
+            <span class="count wishListCuntFromController">{{ auth()->check() ? wishlistCount() : '0' }}</span>
           </div>
           <p class='label'>{{ __('Wishlist') }}</p>
         </a>
